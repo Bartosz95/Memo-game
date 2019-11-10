@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -16,17 +15,13 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import javax.swing.*;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class Main extends Application {
 
-    private int picturesNumber = 8, maxPicture = 36; // ilość obrazków w pliku src. wymagana jest poprawna konfiguracja!
+    private int picturesNumber = 8, maxPicture = 36; // count of pictures in resources/images/ without icon.png
     private Button lastButton = new Button();
     private Button prevButton = new Button();
     private static boolean preferVertical = false;
@@ -39,8 +34,8 @@ public class Main extends Application {
     }
 
     /*
-        - zawiera dwie sceny: menu główne i opcje
-        - włącza się po starcie
+     * - start included two Scene: menu and option
+     * - menu scene started together with program
      */
     @Override
     public void start(Stage stage) {
@@ -116,7 +111,7 @@ public class Main extends Application {
     }
 
     /*
-        - Odpowiada za główną rozgrywkę
+     * - This function is responsible for the main entertainment
      */
     private void game(){
         lastButton.setId(null);
@@ -198,30 +193,30 @@ public class Main extends Application {
     }
 
     /*
-        - Zwracana lista jest dwa razy większa niż ilość obrazków poniważ każdy obrazek musi wystąpić dwukrotnie obrazki
-        - Obrazki są wybierane losowo z zakresu podanego w zmiennej
+     * - returned list is double bigger like count of pictures because everyone picture have to appear twice
+     * - pictures is randomly choice form 1 to  maxNumberOfPictures
      */
-    private static ArrayList getRandomNumberOfPictureList(int numberOfPictures, int maxnumberOfPictures) {
+    private static ArrayList getRandomNumberOfPictureList(int numberOfPictures, int maxNumberOfPictures) {
 
-        ArrayList<Integer> allindexList = new ArrayList<>();
-        for (int i = 0; i < maxnumberOfPictures+1; i++) {
-            allindexList.add(i);
+        ArrayList<Integer> allIndexList = new ArrayList<>();
+        for (int i = 0; i < maxNumberOfPictures+1; i++) {
+            allIndexList.add(i);
         }
         Random generator = new Random();
         int index;
         ArrayList<Integer> indexList = new ArrayList<>();
 
         for (int i = 0; i < numberOfPictures; i++) {
-            index = generator.nextInt(allindexList.size());
-            indexList.add(generator.nextInt(indexList.size()+1),allindexList.get(index));
-            indexList.add(generator.nextInt(indexList.size()+1),allindexList.get(index));
-            allindexList.remove(index);
+            index = generator.nextInt(allIndexList.size());
+            indexList.add(generator.nextInt(indexList.size()+1), allIndexList.get(index));
+            indexList.add(generator.nextInt(indexList.size()+1), allIndexList.get(index));
+            allIndexList.remove(index);
         }
         return indexList;
     }
 
     /*
-    zwraca liczbę pól w wierszu dla równomiernego rozłożenia macierzy obrazków
+     * - Algorithm return count of line to even distribution of lines
      */
     private static int rectangleRowSize(int n) {
         if(n<2)

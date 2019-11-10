@@ -1,10 +1,7 @@
-<<<<<<< HEAD
+
 # ![](src/main/resources/images/icon.png) Game memo 
-=======
-# Game memo
-# Installation process:
->>>>>>> 65f4958b91afb608376ff5a1d928b69c1397afc0
-## For installation run command below
+
+## For installation and run command below
  [Download](https://github.com/Bartosz95/game-memo/archive/master.zip) and unzip or clone repository from github:
 ```shell script
 git clone https://github.com/Bartosz95/game-memo/archive/master.zip

@@ -1,4 +1,4 @@
-# Game memo
+# ![](src/main/resources/images/icon.png) Game memo 
 ## For installation run command below
  [Download](https://github.com/Bartosz95/game-memo/archive/master.zip) and unzip or clone repository from github:
 ```shell script

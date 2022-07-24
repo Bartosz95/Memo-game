@@ -2,13 +2,13 @@
 # ![](src/main/resources/images/icon.png) Game memo 
 
 ## For installation and run command below
- [Download](https://github.com/Bartosz95/game-memo/archive/master.zip) and unzip or clone repository from github:
+ [Download](https://github.com/Bartosz95/memo-game/archive/master.zip) and unzip or clone repository from github:
 ```shell script
-git clone https://github.com/Bartosz95/game-memo/archive/master.zip
+git clone https://github.com/Bartosz95/memo-game/archive/master.zip
 ```
-Change directory to game-memo/ :
+Change directory to memo-game/ :
 ```shell script
-cd game-memo/
+cd memo-game/
 ```
 Build jar file and run:
 ```shell script

@@ -1,5 +1,5 @@
 
-# ![](src/main/resources/images/icon.png) Game memo 
+# ![](src/main/resources/images/icon.png) Memo game 
 
 ## For installation and run command below
  [Download](https://github.com/Bartosz95/memo-game/archive/master.zip) and unzip or clone repository from github:

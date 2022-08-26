@@ -15,7 +15,7 @@ Build jar file and run:
 ./gradlew run
 ```
 ## Use application
-When application has started at first will be visible menu view.
+When the application has started at first there will be a visible menu view.
 #### Menu
 Main looks like below. Like it see it included 3 buttons: 
  * PLAY - run the game with is presented in section **Game**,
@@ -25,10 +25,11 @@ Main looks like below. Like it see it included 3 buttons:
 ![](description-images/menu.PNG)
 
 ### Game
-In game view you see a button's matrix. Main rule of memo game is matched two the same pictures each other. Score is display in bottom-left corner. If you wont to go to main menu you must win a game or run it again.
+In the game view you see a button's matrix. Main rule of the memo game is to match two of the same pictures to each other. Score is displayed in the bottom-left corner. If you want to go to the main menu you must win a game or run it again.
 ![](description-images/game.PNG)
 
 ### Option's menu
-Option's menu included 2 things. In ChoiceBox provides choice how many picture's couples  is necessary to match. Great things is that algorithm lay a pictures always in rectangle shape. That introduces necessity choice if gamer prefer vertical placement of pictures. Button **Back to menu** moves to main menu.
+Option's menu included 2 things. ChoiceBox provides a choice of how many picture's couples  are necessary to match. Great thing is that the algorithm lays pictures always in rectangle shape. That introduces a necessity choice if gamers prefer vertical placement of pictures. Button **Back to menu** moves to the main menu.
 
 ![](description-images/options.PNG)
+

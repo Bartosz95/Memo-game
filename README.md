@@ -22,14 +22,16 @@ Main looks like below. Like it see it included 3 buttons:
  * Options - run option menu with is presented in section **Option's menu**,
  * Exit Game - exit the game.
  
-![](description-images/menu.PNG)
+
+<p align="center"><p align="center"><img src="description-images/menu.PNG"></p>
 
 ### Game
 In the game view you see a button's matrix. Main rule of the memo game is to match two of the same pictures to each other. Score is displayed in the bottom-left corner. If you want to go to the main menu you must win a game or run it again.
-![](description-images/game.PNG)
+
+<p align="center"><p align="center"><img src="description-images/game.PNG"></p>
 
 ### Option's menu
 Option's menu included 2 things. ChoiceBox provides a choice of how many picture's couples  are necessary to match. Great thing is that the algorithm lays pictures always in rectangle shape. That introduces a necessity choice if gamers prefer vertical placement of pictures. Button **Back to menu** moves to the main menu.
 
-![](description-images/options.PNG)
+<p align="center"><p align="center"><img src="description-images/options.PNG"></p>
 
